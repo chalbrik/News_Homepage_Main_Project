@@ -1,72 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | News homepage</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <link rel="stylesheet" href="./style.css">
+    <title>Frontend Mentor | News homepage</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
 
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="main-container">
+        <div id="desktop-nav-bar" class="nav-bar">
+          <img src="./assets/images/logo.svg" alt="Logo" />
+          <nav class="menu font">
+            <span>Home</span>
+            <span>New</span>
+            <span>Popular</span>
+            <span>Trending</span>
+            <span>Categories</span>
+          </nav>
+        </div>
 
-  <main>
-    <div class="main-container">
-      <div class="nav-bar">
-        <img src="./assets/images/logo.svg" alt="Logo">
-        <nav class="menu">
-          <span>Home</span>
-          <span>New</span>
-          <span>Popular</span>
-          <span>Trending</span>
-          <span>Categories</span>
-        </nav>
+        <div id="mobile-nav-bar" class="nav-bar">
+          <img src="./assets/images/logo.svg" alt="Logo" />
+          <img src="./assets/images/icon-menu.svg" alt="Icon menu">
+        </div>
+
+        <div class="web-content">
+          <!-- <img
+            class="main-image"
+            src="./assets/images/image-web-3-desktop.jpg"
+            alt="Main-image"
+          /> -->
+
+          <picture>
+            <source media="(max-width: 435px)" srcset="./assets/images/image-web-3-mobile.jpg">
+            <source media="(min-width: 436px)" srcset="./assets/images/image-web-3-desktop.jpg">
+            <img class="main-image" src="./assets/images/image-web-3-desktop.jpg" alt="Main-image">
+          </picture>
+
+          <div class="new-articles">
+            <span class="title font">New</span>
+            <div class="new-article font">
+              <span class="new-article-heading font">Hydrogen VS Electric Cars</span>
+              <p class="new-article-content font">Will hydrogen-fueled
+                cars ever catch up to EVs?</p>
+              <hr>
+            </div>
+            <div class="new-article font">
+              <span class="new-article-heading font">The Downsides of AI</span>
+              <p class="new-article-content font">Artistry What are the
+                possible adverse effects of on-demand AI image generation?</p>
+              <hr>
+            </div>
+            <div class="new-article font">
+              <span class="new-article-heading font">Is VC Funding
+                Drying Up?</span>
+              <p class="new-article-content font">Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.</p>
+            </div>
+          </div>
+          <div class="main-article">
+            <h1 class="heading font">The Bright Future of Web 3.0?</h1>
+            <div class="main-article-content">
+              <p class="content-font font">We dive into the next evolution of the web that claims to put the power of
+                the platforms back into the hands of the people. But is it really fulfilling
+                its promise?</p>
+              <button class="read-more">Read more</button>
+            </div>
+          </div>
+          <div class="choose-article">
+            <img class="choose-article-image" src="./assets/images/image-retro-pcs.jpg" alt="Reviving Retro PCs">
+            <div class="choose-article-content">
+              <span class="font">01</span>
+              <h2 class="font">Reviving Retro PCs</h2>
+              <p class="font">What happens when old PCs are given
+                modern upgrades?</p>
+            </div>
+          </div>
+          <div class="choose-article">
+            <img class="choose-article-image" src="./assets/images/image-top-laptops.jpg" alt="Top 10 Laptops of 2022">
+            <div class="choose-article-content">
+              <span class="font">02</span>
+              <h2 class="font">Top 10 Laptops of 2022</h2>
+              <p class="font">Our best picks for various needs
+                and budgets.</p>
+            </div>
+          </div>
+          <div class="choose-article">
+            <img class="choose-article-image" src="./assets/images/image-gaming-growth.jpg" alt="The Growth of Gaming">
+            <div class="choose-article-content">
+              <span class="font">03</span>
+              <h2 class="font">The Growth of Gaming</h2>
+              <p class="font">How the pandemic has sparked fresh
+                opportunities.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="web-content">
-
-      </div>
-    </div>
-  </main>
-
-
-  The Bright Future of Web 3.0?
-
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
-
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-
-  <script src="./index.js"></script>
-</body>
+    </main>
+    <script src="./index.js"></script>
+  </body>
 </html>
