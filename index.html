@@ -39,21 +39,29 @@
 
         <div id="mobile-nav-bar" class="nav-bar">
           <img src="./assets/images/logo.svg" alt="Logo" />
-          <img src="./assets/images/icon-menu.svg" alt="Icon menu">
+          <img id="nav-bar-icon" src="./assets/images/icon-menu.svg" alt="Icon menu">
+        </div>
+
+        <div id="mobile-nav-bar-overlay" class="overlay"></div>
+
+        <div id="mobile-nav-bar-open" class="mobile-menu">
+          <img id="close-nav-bar-icon" src="./assets/images/icon-menu-close.svg" alt="Close button">
+          <nav class="menu-mobile font">
+            <span>Home</span>
+            <span>New</span>
+            <span>Popular</span>
+            <span>Trending</span>
+            <span>Categories</span>
+          </nav>
         </div>
 
         <div class="web-content">
-          <!-- <img
+          <img id="img"
             class="main-image"
             src="./assets/images/image-web-3-desktop.jpg"
             alt="Main-image"
-          /> -->
+          />
 
-          <picture>
-            <source media="(max-width: 435px)" srcset="./assets/images/image-web-3-mobile.jpg">
-            <source media="(min-width: 436px)" srcset="./assets/images/image-web-3-desktop.jpg">
-            <img class="main-image" src="./assets/images/image-web-3-desktop.jpg" alt="Main-image">
-          </picture>
 
           <div class="new-articles">
             <span class="title font">New</span>

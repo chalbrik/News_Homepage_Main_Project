@@ -298,7 +298,63 @@ button.read-more:focus {
         align-items: center;
         margin-bottom: -90px;
     }
+
+    #mobile-nav-bar-open{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 65%;
+        background: hsl(36, 100%, 99%);
+        z-index: 1000;
+        visibility: hidden;
+        opacity: 1;
+    }
+
+    #mobile-nav-bar-open.show {
+        visibility: visible;
+        opacity: 1;
+      }
+
+    .menu-mobile{
+        height: 100vh;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-mobile > span{
+        font-size: 22px;
+        font-weight: 400;
+        color: hsl(240, 100%, 5%);
+        margin-bottom: 25px;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        display: none;
+      }
+
+      .overlay.active {
+        display: block; 
+        opacity: 1;
+      }
+
+    #close-nav-bar-icon{
+        margin: 40px 25px 60px 0;
+    }
     
+   
     
 
 }
